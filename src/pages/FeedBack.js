@@ -19,12 +19,13 @@ render() {
   return (
     <div>
       <Header />
+      <div className="feedbackMessage">
       <h1 data-testid="feedback-text">
-        { assertions <= 2 ? 'Could be better...' : 'Well Done!'}
+        { assertions <= 2 ? 'Could be better...' + '😰': 'Well Done!' + '🤓'}
       </h1>
       <div>
-        <h2 data-testid="feedback-total-question">{assertions}</h2>
-        <h2 data-testid="feedback-total-score">{score}</h2>
+        <h2 data-testid="feedback-total-question">Assertions : {assertions}</h2>
+        <h2 data-testid="feedback-total-score">Total Point : {score}</h2>
       </div>
       <button
         type="button"
@@ -40,6 +41,7 @@ render() {
       >
         Jogue Novamente!
       </button>
+    </div>
     </div>
 
   );

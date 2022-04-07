@@ -232,6 +232,39 @@ code {
   text-align: center;
 }
 
+/* FEEDBACK */
+
+.feedbackMessage {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  width: 20%;
+  /* text-align: center; */
+  /* display: flex; */
+  /* color: #000; */
+  /* font-size: 23px; */
+  font-weight: bold;
+}
+
+.feedbackMessage button {
+  border: 0;
+    border-radius: 10px;
+    background-color: rgba(14, 10, 10, 0.616);
+    color: #CCC;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 10px;
+    /* color: #000; */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feedbackMessage button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* -----------------Wrong and correct answer ----------------------- */
 
 .wrong-answer {
